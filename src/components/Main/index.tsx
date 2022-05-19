@@ -7,8 +7,8 @@ export const Main = () => {
   return (
     <Container>
       <Content>
-        <Button />
-        <Button />
+        <Button>Projects</Button>
+        <Button>Skills</Button>
       </Content>
 
       <Sections>
