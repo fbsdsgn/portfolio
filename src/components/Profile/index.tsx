@@ -1,4 +1,5 @@
 import {
+  DownloadSimple,
   GithubLogo,
   LinkedinLogo,
   MessengerLogo,
@@ -39,30 +40,32 @@ export const Profile = () => {
           <Social>
             <Li>
               <Link href="#" target="_blank">
-                <GithubLogo />
+                <GithubLogo size="32" />
               </Link>
             </Li>
 
             <Li>
               <Link href="#" target="_blank">
-                <LinkedinLogo />
+                <LinkedinLogo size="32" />
               </Link>
             </Li>
 
             <Li>
               <Link href="#" target="_blank">
-                <MessengerLogo />
+                <MessengerLogo size="32" />
               </Link>
             </Li>
 
             <Li>
               <Link href="#" target="_blank">
-                <WhatsappLogo />
+                <WhatsappLogo size="32" />
               </Link>
             </Li>
           </Social>
 
-          <Button download="#">Download CV</Button>
+          <Button download="#" href="#">
+            Download CV <DownloadSimple size={32} />
+          </Button>
         </Data>
       </Content>
     </Container>
