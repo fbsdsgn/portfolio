@@ -8,17 +8,22 @@ export const globalStyles = globalCss({
     fontFamily: "'Ubuntu', sans-serif",
   },
   ul: {
-    textDecoration: "none",
     listStyle: "none",
+  },
+  a: {
+    textDecoration: "none",
+  },
+  body: {
+    backgroundColor: "$blue1",
   },
 });
 
 export const Container = styled("div", {
   maxWidth: 1416,
-  margin: "0 auto",
+  m: "0 auto",
   border: "1px solid red",
 
   display: "grid",
   gap: "1.5rem",
-  justifyContent: "center"
+  justifyContent: "center",
 });
