@@ -19,11 +19,20 @@ export const globalStyles = globalCss({
 });
 
 export const Container = styled("div", {
-  maxWidth: 1416,
+  position: "relative",
+  maxWidth: 916,
   m: "0 auto",
-  border: "1px solid red",
 
   display: "grid",
   gap: "1.5rem",
   justifyContent: "center",
+
+  '& .moon': {
+    position: "absolute",
+    right: "$4",
+    top: "$4",
+    color: "$blue12"
+  }
 });
+
+
