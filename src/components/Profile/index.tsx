@@ -3,6 +3,7 @@ import {
   GithubLogo,
   LinkedinLogo,
   MessengerLogo,
+  Moon,
   WhatsappLogo,
 } from "phosphor-react";
 import { Container } from "../../styles/global";
@@ -21,7 +22,6 @@ import {
   Content,
 } from "./styles";
 
-import profile from "../../assets/img/profile.png";
 
 export const Profile = () => {
   return (
@@ -35,36 +35,36 @@ export const Profile = () => {
           </Border>
 
           <Name>Felipe B Souza</Name>
-          <Profession>UI Designer • Front-end</Profession>
+          <Profession>Web Developer</Profession>
 
           <Social>
             <Li>
               <Link href="#" target="_blank">
-                <GithubLogo size="32" />
+                <GithubLogo size="24" />
               </Link>
             </Li>
 
             <Li>
               <Link href="#" target="_blank">
-                <LinkedinLogo size="32" />
+                <LinkedinLogo size="24" />
               </Link>
             </Li>
 
             <Li>
               <Link href="#" target="_blank">
-                <MessengerLogo size="32" />
+                <MessengerLogo size="24" />
               </Link>
             </Li>
 
             <Li>
               <Link href="#" target="_blank">
-                <WhatsappLogo size="32" />
+                <WhatsappLogo size="24" />
               </Link>
             </Li>
           </Social>
 
           <Button download="#" href="#">
-            Download CV <DownloadSimple size={32} />
+            Download CV <DownloadSimple size={24} />
           </Button>
         </Data>
       </Content>

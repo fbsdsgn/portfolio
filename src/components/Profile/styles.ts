@@ -4,7 +4,13 @@ import profile from "../../assets/img/profile.png";
 
 export const Content = styled("div", {
   position: "relative",
-  mt: "$18",
+  mt: "$9",
+
+  '& .moon': {
+    position: "absolute",
+    right: 0,
+    top: "1rem"
+  }
 });
 
 export const Data = styled("div", {
@@ -15,17 +21,17 @@ export const Data = styled("div", {
 
 export const Border = styled("div", {
   display: "grid",
-  size: "$20",
-  border: "4px solid $blue11",
+  size: "$16",
+  border: "2px solid $blue11",
   justifySelf: "center",
   borderRadius: "50%",
   placeItems: "center",
-  mb: "$4",
+  mb: "$2",
 });
 
 export const Perfil = styled("div", {
   display: "grid",
-  size: "$18",
+  size: "$14",
   borderRadius: "50%",
   overflow: "hidden",
   alignItems: "flex-center",
@@ -33,15 +39,15 @@ export const Perfil = styled("div", {
 });
 
 export const Image = styled("div", {
+  width: "$14",
   backgroundImage: `url(${profile})`,
-  width: "$18",
   backgroundPosition: "center",
-  backgroundSize: "160px",
+  backgroundSize: "112px",
   backgroundRepeat: "no-repeat",
 });
 
 export const Name = styled("h2", {
-  fontSize: "$4",
+  fontSize: "$3",
   mb: "$1",
   color: "$blue12",
   fontWeight: "500",
@@ -56,14 +62,12 @@ export const Profession = styled("h3", {
 
 export const Social = styled("ul", {
   display: "flex",
-  width: 280,
-  jc: "space-between",
-  columnGap: ".75rem",
+  jc: "center",
+  columnGap: "$3",
   mb: "$4",
 });
 
 export const Li = styled("li", {
-  size: "$6",
   display: "flex",
   jc: "center",
   ai: "center",
@@ -77,8 +81,8 @@ export const Li = styled("li", {
 
 export const Link = styled("a", {
   color: "$blue12",
-  padding: "$1",
   transition: "0.3s",
+  padding: 4,
   "&:hover": {
     color: "$blue11",
   },
@@ -90,7 +94,7 @@ export const Button = styled("a", {
   ai: "center",
   m: "0 auto",
 
-  fontSize: "$3",
+  fontSize: "$2",
   padding: "$2 $3",
   columnGap: "$1",
 
