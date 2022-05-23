@@ -3,7 +3,6 @@ import {
   GithubLogo,
   LinkedinLogo,
   MessengerLogo,
-  Moon,
   WhatsappLogo,
 } from "phosphor-react";
 import { Container } from "../../styles/global";
@@ -22,6 +21,9 @@ import {
   Content,
 } from "./styles";
 
+import { DATA } from "../../helpers/data";
+
+const { fullname, profession } = DATA[0]["profile"];
 
 export const Profile = () => {
   return (
@@ -34,8 +36,8 @@ export const Profile = () => {
             </Perfil>
           </Border>
 
-          <Name>Felipe B Souza</Name>
-          <Profession>Web Developer</Profession>
+          <Name>{fullname}</Name>
+          <Profession>{profession}</Profession>
 
           <Social>
             <Li>
