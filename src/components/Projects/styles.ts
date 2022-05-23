@@ -66,23 +66,32 @@ export const Title = styled("h3", {
 
 export const Link = styled("a", {
   size: "$5",
-  backgroundColor: "$blue7",
+  backgroundColor: "$blue8",
   borderRadius: 4,
   display: "flex",
   jc: "center",
   ai: "center",
   color: "$blue12",
+  "&:hover": {
+    backgroundColor: "$blue7",
+  },
 
   variants: {
     size: {
       small: {
         size: "$4",
+        "&:hover": {
+          color: "$blue11",
+        },
       },
     },
 
     color: {
       secondary: {
         backgroundColor: "$blue2",
+        "&:hover": {
+          backgroundColor: "$blue3",
+        },
       },
     },
   },
