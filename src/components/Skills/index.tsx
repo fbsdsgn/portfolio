@@ -1,4 +1,4 @@
-import { FileHtml } from "phosphor-react";
+import { FileCss, FileHtml, FileJs } from "phosphor-react";
 import { Container } from "../../styles/global";
 import {
   Area,
@@ -12,123 +12,72 @@ import {
   Title,
 } from "./styles";
 
-export const Skills = () => (
-  <Container>
-    <Content>
-      <Area>
-        <Title>Frontend Developer</Title>
-        <Box>
-          <Group>
-            <Data>
-             <FileHtml size={24}/>
-              <Divide>
-                <Name>HTML</Name>
-                <Level>Intermediate</Level>
-              </Divide>
-            </Data>
+import { DATA } from "../../helpers/data";
 
-            <Data>
-             <FileHtml size={24}/>
-              <Divide>
-                <Name>CSS</Name>
-                <Level>Intermediate</Level>
-              </Divide>
-            </Data>
+export const Skills = () => {
+  const { front, back } = DATA[0]["skills"];
 
-            <Data>
-             <FileHtml size={24}/>
-              <Divide>
-                <Name>JavaScript</Name>
-                <Level>Intermediate</Level>
-              </Divide>
-            </Data>
-          </Group>
+  return (
+    <Container>
+      <Content>
+        <Area>
+          <Title>Frontend Developer</Title>
+          <Box>
+            <Group>
+              {front.colOne.map(({ name, level, icon }) => (
+                <Data>
+                  <FileHtml size={24} color="tomato" />
+                  <Divide>
+                    <Name>{name}</Name>
+                    <Level>{level}</Level>
+                  </Divide>
+                </Data>
+              ))}
+            </Group>
 
-          <Group>
-            <Data>
-             <FileHtml size={24} color="cyan"/>
-              <Divide>
-                <Name>ReactJS</Name>
-                <Level>Intermediate</Level>
-              </Divide>
-            </Data>
+            <Group>
+              {front.colTwo.map(({ name, level, icon }) => (
+                <Data>
+                  <FileHtml size={24} color="tomato" />
+                  <Divide>
+                    <Name>{name}</Name>
+                    <Level>{level}</Level>
+                  </Divide>
+                </Data>
+              ))}
+            </Group>
+          </Box>
+        </Area>
 
-            <Data>
-             <FileHtml size={24} color="cyan"/>
-              <Divide>
-                <Name>Tailwind</Name>
-                <Level>Intermediate</Level>
-              </Divide>
-            </Data>
+        <Area>
+          <Title>Backend Developer</Title>
+          <Box>
+            <Group>
+              {back.colOne.map(({ name, level, icon }) => (
+                <Data>
+                  <FileHtml size={24} color="tomato" />
+                  <Divide>
+                    <Name>{name}</Name>
+                    <Level>{level}</Level>
+                  </Divide>
+                </Data>
+              ))}
+            </Group>
 
-            <Data>
-             <FileHtml size={24} color="cyan"/>
-              <Divide>
-                <Name>Sass</Name>
-                <Level>Intermediate</Level>
-              </Divide>
-            </Data>
-          </Group>
-        </Box>
-      </Area>
-
-      <Area>
-        <Title>Backend Developer</Title>
-        <Box>
-          <Group>
-            <Data>
-             <FileHtml size={24}/>
-              <Divide>
-                <Name>HTML</Name>
-                <Level>Intermediate</Level>
-              </Divide>
-            </Data>
-
-            <Data>
-             <FileHtml size={24}/>
-              <Divide>
-                <Name>CSS</Name>
-                <Level>Intermediate</Level>
-              </Divide>
-            </Data>
-
-            <Data>
-             <FileHtml size={24}/>
-              <Divide>
-                <Name>JavaScript</Name>
-                <Level>Intermediate</Level>
-              </Divide>
-            </Data>
-          </Group>
-
-          <Group>
-            <Data>
-             <FileHtml size={24} color="cyan"/>
-              <Divide>
-                <Name>ReactJS</Name>
-                <Level>Intermediate</Level>
-              </Divide>
-            </Data>
-
-            <Data>
-             <FileHtml size={24} color="cyan"/>
-              <Divide>
-                <Name>Tailwind</Name>
-                <Level>Intermediate</Level>
-              </Divide>
-            </Data>
-
-            <Data>
-             <FileHtml size={24} color="cyan"/>
-              <Divide>
-                <Name>Sass</Name>
-                <Level>Intermediate</Level>
-              </Divide>
-            </Data>
-          </Group>
-        </Box>
-      </Area>
-
-    </Content>
-  </Container>
-);
+            <Group>
+              {back.colTwo.map(({ name, level, icon }) => (
+                <Data>
+                  <FileHtml size={24} color="tomato" />
+                  <Divide>
+                    <Name>{name}</Name>
+                    <Level>{level}</Level>
+                  </Divide>
+                </Data>
+              ))}
+            </Group>
+          </Box>
+        </Area>
+      </Content>
+    </Container>
+  );
+};
