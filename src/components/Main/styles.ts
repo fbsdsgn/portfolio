@@ -19,6 +19,12 @@ export const Button = styled("button", {
   "&:hover": {
     backgroundColor: "$blue1",
   },
+
+  "@bp1": {
+    width: "$14",
+    fontSize: "$2",
+    padding: "$1",
+  },
 });
 
 export const Content = styled("div", {
@@ -31,12 +37,12 @@ export const Content = styled("div", {
 });
 
 export const Sections = styled("div", {
-  mb: "$4"
+  mb: "$4",
 });
 
 export const Social = styled("div", {
   textAlign: "center",
-  mb: "$8"
+  mb: "$8",
 });
 
 export const Link = styled("a", {
