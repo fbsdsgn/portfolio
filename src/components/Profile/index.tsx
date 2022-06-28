@@ -6,6 +6,7 @@ import {
   WhatsappLogo,
 } from "phosphor-react";
 import { Container } from "../../styles/global";
+import {pdf} from ""
 
 import {
   Border,
@@ -65,7 +66,7 @@ export const Profile = () => {
             </Li>
           </Social>
 
-          <Button download="./src/assets/pdf/cv.pdf" href="./src/assets/pdf/cv.pdf">
+          <Button download="../../assets/pdf/cv.pdf" href="../../src/assets/pdf/cv">
             Download CV <DownloadSimple size={24} />
           </Button>
         </Data>
