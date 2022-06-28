@@ -65,7 +65,7 @@ export const Profile = () => {
             </Li>
           </Social>
 
-          <Button download="../../assets/pdf/cv.pdf" href="../../src/assets/pdf/cv">
+          <Button download="" href="../../src/assets/pdf/cv.pdf">
             Download CV <DownloadSimple size={24} />
           </Button>
         </Data>
