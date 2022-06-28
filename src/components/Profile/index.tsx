@@ -6,7 +6,6 @@ import {
   WhatsappLogo,
 } from "phosphor-react";
 import { Container } from "../../styles/global";
-import {pdf} from ""
 
 import {
   Border,
