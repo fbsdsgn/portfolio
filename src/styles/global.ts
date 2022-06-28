@@ -14,7 +14,7 @@ export const globalStyles = globalCss({
     textDecoration: "none",
   },
   body: {
-    backgroundColor: "$blue1",
+    background: "linear-gradient(160.03deg, #001120 -4.29%, #01050A 28.41%, #05070A 65.7%, #001528 98.36%, #01101E 120.13%)"
   },
 });
 

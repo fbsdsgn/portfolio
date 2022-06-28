@@ -34,8 +34,7 @@ export const Modal = styled("div", {
 
   borderRadius: 4,
   transition: ".3s",
-  background:
-    "linear-gradient(360deg, #000000 -7.6%, rgba(0, 34, 74, 0.31) 102.14%)",
+  background: "linear-gradient(360deg, #001831 -1.47%, rgba(0, 117, 255, 0.06) 76.39%, rgba(0, 34, 74, 0.31) 102.14%)"
 });
 
 export const Divide = styled("div", {});
@@ -88,7 +87,7 @@ export const Link = styled("a", {
 
     color: {
       secondary: {
-        backgroundColor: "$blue2",
+        backgroundColor: "#020B13",
         "&:hover": {
           backgroundColor: "$blue3",
         },

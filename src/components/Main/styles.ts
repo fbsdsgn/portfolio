@@ -13,11 +13,11 @@ export const Button = styled("button", {
   transition: "0.3s",
 
   "&.active": {
-    backgroundColor: "$blue1",
+    backgroundColor: "#051524",
   },
 
   "&:hover": {
-    backgroundColor: "$blue1",
+    backgroundColor: "#051524",
   },
 
   "@bp1": {
@@ -32,7 +32,7 @@ export const Content = styled("div", {
   columnGap: "$1",
   m: "$6 auto",
   padding: "$1",
-  backgroundColor: "$blue2",
+  backgroundColor: "#020B13",
   borderRadius: 4,
 });
 

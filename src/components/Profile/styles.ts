@@ -73,7 +73,7 @@ export const Li = styled("li", {
   ai: "center",
   borderRadius: 4,
   transition: "0.3s",
-  background: "$blue2",
+  background: "#020B13",
   "&:hover": {
     background: "$blue3",
   },
@@ -102,8 +102,9 @@ export const Button = styled("a", {
 
   color: "$blue12",
   backgroundColor: "$blue8",
-  transition: "0.3s",
+  background: "linear-gradient(94.87deg, #2891FC -2.55%, #02427D 101.72%)",
+  transition: "0.4s",
   "&:hover": {
-    backgroundColor: "$blue7",
+    opacity: .8,
   },
 });

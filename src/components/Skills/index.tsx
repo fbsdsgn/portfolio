@@ -3,6 +3,7 @@ import { Container } from "../../styles/global";
 import {
   Area,
   Box,
+  CheckIcon,
   Content,
   Data,
   Divide,
@@ -26,7 +27,7 @@ export const Skills = () => {
             <Group>
               {front.colOne.map(({ name, level, icon }) => (
                 <Data>
-                  <FileHtml size={24} color="tomato" />
+                  <CheckIcon src={icon} alt="Check"/>
                   <Divide>
                     <Name>{name}</Name>
                     <Level>{level}</Level>
@@ -38,7 +39,7 @@ export const Skills = () => {
             <Group>
               {front.colTwo.map(({ name, level, icon }) => (
                 <Data>
-                  <FileHtml size={24} color="tomato" />
+                  <CheckIcon src={icon} alt="Check"/>
                   <Divide>
                     <Name>{name}</Name>
                     <Level>{level}</Level>
@@ -55,7 +56,7 @@ export const Skills = () => {
             <Group>
               {back.colOne.map(({ name, level, icon }) => (
                 <Data>
-                  <FileHtml size={24} color="tomato" />
+                  <CheckIcon src={icon} alt="Check"/>
                   <Divide>
                     <Name>{name}</Name>
                     <Level>{level}</Level>
@@ -67,7 +68,7 @@ export const Skills = () => {
             <Group>
               {back.colTwo.map(({ name, level, icon }) => (
                 <Data>
-                  <FileHtml size={24} color="tomato" />
+                  <CheckIcon src={icon} alt="Check"/>
                   <Divide>
                     <Name>{name}</Name>
                     <Level>{level}</Level>

@@ -19,7 +19,7 @@ export const Area = styled("div", {
   width: "100%",
   maxWidth: 400,
   padding: "$3",
-  backgroundColor: "$blue2",
+  backgroundColor: "#020B13",
   borderRadius: 4,
 });
 
@@ -63,3 +63,8 @@ export const Level = styled("h3", {
   fontWeight: 400,
   fontSize: "$2",
 });
+
+export const CheckIcon = styled("img", {
+  width: "$3",
+  height: "$3"
+})
