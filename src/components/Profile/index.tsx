@@ -7,6 +7,8 @@ import {
 } from "phosphor-react";
 import { Container } from "../../styles/global";
 
+import pdf from "../../assets/pdf/cv.pdf"
+
 import {
   Border,
   Data,
@@ -65,7 +67,7 @@ export const Profile = () => {
             </Li>
           </Social>
 
-          <Button download="" href="../../src/assets/pdf/cv.pdf">
+          <Button download="" href={pdf}>
             Download CV <DownloadSimple size={24} />
           </Button>
         </Data>
