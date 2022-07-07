@@ -5,9 +5,9 @@ export const DATA = [
         id: 1,
         title: "Explore",
         subtitle: "Front-end",
-        deployURL: "https://github.com/fbsdsgn",
-        githubURL: "",
-        figmaURL: "",
+        deployURL: "https://fbsdsgn-explore.vercel.app/",
+        githubURL: "https://github.com/fbsdsgn/explore",
+        figmaURL: "https://www.figma.com/file/dzrAVuGpj66Jh0mMgZl5D9/Explore?node-id=0%3A1",
         imageURL:
           "https://thumbs2.imgbox.com/0e/be/Q47cViEs_t.png",
       },
