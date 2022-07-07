@@ -22,7 +22,15 @@ export const Projects = () => {
     <Container>
       <Content>
         {projects.map(
-          ({ id, title, subtitle, deployURL, githubURL, figmaURL, imageURL }) => (
+          ({
+            id,
+            title,
+            subtitle,
+            deployURL,
+            githubURL,
+            figmaURL,
+            imageURL,
+          }) => (
             <Card key={id}>
               <Image src={imageURL} />
               <Modal>
@@ -30,15 +38,25 @@ export const Projects = () => {
                   <Subtitle>{subtitle}</Subtitle>
                   <Title>{title}</Title>
                   <Wrapper>
-                    <Link href={deployURL}>
+                    <Link href={deployURL} target="_blank">
                       <LinkSimple size={32} />
                     </Link>
                     <Group>
-                      <Link color="secondary" size="small" href={githubURL}>
+                      <Link
+                        color="secondary"
+                        target="_blank"
+                        size="small"
+                        href={githubURL}
+                      >
                         <GithubLogo size={24} />
                       </Link>
 
-                      <Link color="secondary" size="small" href={figmaURL}>
+                      <Link
+                        color="secondary"
+                        target="_blank"
+                        size="small"
+                        href={figmaURL}
+                      >
                         <FigmaLogo size={24} />
                       </Link>
                     </Group>
